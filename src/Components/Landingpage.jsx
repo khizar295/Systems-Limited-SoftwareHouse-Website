@@ -33,7 +33,7 @@ export default function Landingpage() {
   ];
 
   return (
-    <div style={{ width: '100vw', height: '100vh', overflow: 'hidden' }}>
+    <div style={{ width: '100vw', height: '100vh', overflow: 'hidden' }} className='position-relative z-0'>
       <Swiper
         modules={[Autoplay]}
         autoplay={{ delay: 10000 }}

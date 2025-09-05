@@ -7,3 +7,22 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+.text-slider {
+  height: 60px;
+  overflow: hidden;
+  position: relative;
+}
+
+.text-slide-track {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-text {
+  height: 40px;
+  line-height: 40px;
+}
+
+

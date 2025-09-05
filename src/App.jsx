@@ -5,6 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import './App.css'
 import Navbar from './Components/Navbar'
 import Landingpage from './Components/Landingpage'
+import Dynamiclines from './Components/Dynamiclines'
 
 export default function App() {
 
@@ -12,6 +13,7 @@ export default function App() {
     <>
     <Navbar/>
     <Landingpage/>
+    <Dynamiclines/>
     </>
   )
 }
