@@ -6,6 +6,7 @@ import './App.css'
 import Navbar from './Components/Navbar'
 import Landingpage from './Components/Landingpage'
 import Dynamiclines from './Components/Dynamiclines'
+import Insights from './Components/Insights'
 
 export default function App() {
 
@@ -14,6 +15,7 @@ export default function App() {
     <Navbar/>
     <Landingpage/>
     <Dynamiclines/>
+    <Insights/>
     </>
   )
 }

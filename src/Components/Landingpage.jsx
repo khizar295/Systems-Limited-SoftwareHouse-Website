@@ -36,7 +36,7 @@ export default function Landingpage() {
     <div style={{ width: '100vw', height: '100vh', overflow: 'hidden' }} className='position-relative z-0'>
       <Swiper
         modules={[Autoplay]}
-        autoplay={{ delay: 10000 }}
+        autoplay={{ delay: 2000 }}
         loop={true}
         spaceBetween={0}
         slidesPerView={1}
@@ -76,8 +76,8 @@ export default function Landingpage() {
                   style={{
                     padding: '0.75rem 1.5rem',
                     fontSize: '1.5rem',
-                    backgroundColor: '#007bff',
-                    border: 'none',
+                    border: '2px solid white',
+                    backgroundColor: 'transparent',
                     borderRadius: '5px',
                     color: 'white',
                     cursor: 'pointer',
