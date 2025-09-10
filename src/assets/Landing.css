@@ -1,0 +1,17 @@
+.text-slider {
+  height: 60px;
+  overflow: hidden;
+  position: relative;
+}
+
+.text-slide-track {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-text {
+  padding-top: 10px;
+  height: 40px;
+  line-height: 0px;
+}

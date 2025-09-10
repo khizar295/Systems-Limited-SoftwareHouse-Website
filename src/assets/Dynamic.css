@@ -1,0 +1,6 @@
+.dynamic-box:hover {
+
+  box-shadow: 3px 3px 3px black;
+  transition: all 0.5s;
+  transform: translateY(-10px);
+}

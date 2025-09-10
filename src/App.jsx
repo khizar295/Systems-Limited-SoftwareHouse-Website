@@ -7,6 +7,8 @@ import Navbar from './Components/Navbar'
 import Landingpage from './Components/Landingpage'
 import Dynamiclines from './Components/Dynamiclines'
 import Insights from './Components/Insights'
+import Experience from './Components/Experience'
+import Joinus from './Components/Joinus'
 
 export default function App() {
 
@@ -16,6 +18,8 @@ export default function App() {
     <Landingpage/>
     <Dynamiclines/>
     <Insights/>
+    <Experience/>
+    <Joinus/>
     </>
   )
 }
