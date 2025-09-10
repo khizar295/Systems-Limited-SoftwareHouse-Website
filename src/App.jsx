@@ -9,6 +9,8 @@ import Dynamiclines from './Components/Dynamiclines'
 import Insights from './Components/Insights'
 import Experience from './Components/Experience'
 import Joinus from './Components/Joinus'
+import Help from './Components/Help'
+import Footer from './Components/Footer'
 
 export default function App() {
 
@@ -20,6 +22,8 @@ export default function App() {
     <Insights/>
     <Experience/>
     <Joinus/>
+    <Help/>
+    <Footer/>
     </>
   )
 }

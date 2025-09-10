@@ -89,6 +89,7 @@
 .insight-item:hover .overlay-text-1-4 {
   opacity: 1;
   transform: translateX(0);
+  border-top: 2px solid orangered;
 }
 
 .overlay-text-2 {
@@ -160,4 +161,5 @@
 .insight-item:hover .overlay-text-2-4 {
   opacity: 1;
   transform: translateX(0);
+  border-top: 2px solid orangered;
 }

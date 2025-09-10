@@ -38,7 +38,7 @@ export default function Experience() {
             that drive growth and success for all stakeholders. Let’s rise{" "}
             <br /> to new heights with the power of digital transformation.
           </p>
-          <button className="bg-transparent border-0">
+          <button className="bg-transparent border-0 exp-btn">
             <a
               href="/"
               className="text-decoration-none text-warning border-bottom border-warning p-2  fs-5"

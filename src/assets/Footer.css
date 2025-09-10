@@ -1,0 +1,44 @@
+.footer-cont{
+    height: 130vh;
+    background-color: rgb(231, 227, 227);
+}
+.footer-in-cont button{
+    border: none;
+    background-color: transparent;
+    text-align: start;
+    margin: 3px 3px 3px -6px;
+    transition: all 0.5s ease;
+}
+.footer-in-cont button a{
+    text-decoration: none;
+    color: black;
+}
+.footer-in-cont button:hover a{
+    color: orangered;
+    transition: all 0.5s ease;
+}
+.social-icon {
+  color: #444;
+  opacity: 0.7;
+  transition: color 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+}
+
+.social-icon:hover {
+  color: #000;
+  opacity: 1;
+}
+.footer-btn{
+    background-color: transparent;
+}
+.footer-btn a{
+    color: black;
+}
+.footer-btn:hover{
+    background-color: black;
+}
+.footer-btn:hover a{
+    color: white;
+}
