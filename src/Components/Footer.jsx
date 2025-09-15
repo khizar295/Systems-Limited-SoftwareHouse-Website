@@ -213,7 +213,7 @@ export default function Footer() {
         </div>
       </div>
       <div
-        className="row border-top border-dark mt-5 p-3"
+        className="row border-top border-dark mt-5 p-3 footer-last-row"
         style={{ marginLeft: "-50px" }}
       >
         <div className="col-md-8">

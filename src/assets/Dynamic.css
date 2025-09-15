@@ -1,6 +1,19 @@
 .dynamic-box:hover {
-
   box-shadow: 3px 3px 3px black;
   transition: all 0.5s;
   transform: translateY(-10px);
+}
+
+.text-slider {
+  height: 50px;
+  overflow: hidden;
+}
+
+.text-slide-track {
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-text {
+  height: 50px;
 }

@@ -13,6 +13,10 @@
     text-decoration: none;
     color: black;
 }
+.footer-btn:hover{
+    transition: all 0.5s ease;
+    transform: translateY(-10px);
+}
 .footer-in-cont button:hover a{
     color: orangered;
     transition: all 0.5s ease;
@@ -41,4 +45,18 @@
 }
 .footer-btn:hover a{
     color: white;
+}
+
+@media (max-width: 768px){
+           .footer-cont {
+        height: 312vh;
+    }
+}
+@media (max-width: 425px){
+    .footer-cont{
+        height: 345vh;
+    }
+    .footer-last-row{
+    overflow-x: hidden;
+}
 }

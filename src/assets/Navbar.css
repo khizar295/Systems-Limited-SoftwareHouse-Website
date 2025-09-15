@@ -1,0 +1,138 @@
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.navbar-container {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  background: transparent;
+  overflow-x: hidden;
+}
+
+.main-nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0;
+}
+
+.nav-links,
+.nav > div > ul {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.nav-link-item {
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+}
+
+.nav-link-item:hover {
+  color: orange;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.icon-link {
+  color: white;
+  text-decoration: none;
+}
+
+.hamburger-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.75rem;
+  z-index: 1101;
+  position: relative;
+}
+
+.sidebar {
+  position: fixed;
+  top: 10%;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  max-width: 300px;
+  background-color: #111;
+  z-index: 1000;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 30px;
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1.5rem;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 1rem 0;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #444;
+}
+
+.sidebar-link:hover {
+  color: orange;
+}
+
+@media (max-width: 950px) {
+  .nav-links,
+  .nav > div > ul,
+  .icon-btn {
+    display: none !important;
+  }
+
+  .hamburger-btn {
+    display: block;
+  }
+
+  .main-nav {
+    padding-right: 3rem;
+  }
+}

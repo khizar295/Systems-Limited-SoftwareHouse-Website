@@ -31,7 +31,7 @@ export default function Experience() {
             className="fw-normal"
             style={{ marginTop: "100px", fontSize: "3rem" }}
           >
-            Translating <br /> technology into a <br /> positive imoact
+            Translating <br /> technology into a <br /> positive impact
           </h1>
           <p className="mt-4" style={{ fontSize: "1.2rem" }}>
             Our approach allows us to deliver exceptional experiences <br />{" "}
@@ -99,38 +99,52 @@ export default function Experience() {
 
       <div className="experience-carousel mt-5">
         <Swiper
-          modules={[Autoplay]}
-          spaceBetween={100}
-          slidesPerView={5}
-          loop={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-        >
-          {[
-            Img1,
-            Img2,
-            Img3,
-            Img4,
-            Img5,
-            Img6,
-            Img7,
-            Img8,
-            Img9,
-            Img10,
-            Img11,
-            Img12,
-          ].map((img, idx) => (
-            <SwiperSlide key={idx}>
-              <img
-                src={img}
-                alt={`Slide ${idx + 1}`}
-                className="carousel-img"
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+  modules={[Autoplay]}
+  spaceBetween={30}
+  breakpoints={{
+    0: {
+      slidesPerView: 2,
+    },
+    425: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 5,
+    },
+  }}
+  loop={true}
+  autoplay={{
+    delay: 2500,
+    disableOnInteraction: false,
+  }}
+>
+  {[
+    Img1,
+    Img2,
+    Img3,
+    Img4,
+    Img5,
+    Img6,
+    Img7,
+    Img8,
+    Img9,
+    Img10,
+    Img11,
+    Img12,
+  ].map((img, idx) => (
+    <SwiperSlide key={idx}>
+      <img
+        src={img}
+        alt={`Slide ${idx + 1}`}
+        className="carousel-img"
+      />
+    </SwiperSlide>
+  ))}
+</Swiper>
+
       </div>
     </div>
   );

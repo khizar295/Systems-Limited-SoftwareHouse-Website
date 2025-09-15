@@ -8,12 +8,9 @@ import "../assets/Dynamic.css";
 const Dynamiclines = () => {
   const phrases = ["possibilities", "impact", "innovation"];
   const [index, setIndex] = useState(0);
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
 
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
     AOS.refresh();
 
     const timer = setInterval(() => {
@@ -24,154 +21,140 @@ const Dynamiclines = () => {
   }, []);
 
   return (
-    <div
-      className="d-flex justify-content-around mt-5"
-      style={{ height: "200vh", padding: "0 2rem" }}
-    >
-      <div style={{ marginTop: "9rem" }}>
-        <h1 style={{ fontSize: "4rem" }} className="fw-normal">
-          Our Services
-        </h1>
-
-        <div className="d-flex align-items-center">
-          <h1
-            style={{ marginRight: "0.5rem", fontSize: "3rem" }}
-            className="fw-normal"
-            data-aos="slide-right"
-          >
-            Redefining
+    <div className="container my-5">
+      <div className="row align-items-start">
+        <div className="col-md-6 mb-5">
+          <h1 className="fw-normal" style={{ fontSize: "3.5rem", marginTop: "2rem" }}>
+            Our Services
           </h1>
-          <div
-            className="text-slider"
-            data-aos="slide-right"
-            style={{ height: "60px", overflow: "hidden" }}
-          >
-            <div
-              className="text-slide-track"
-              style={{
-                transform: `translateY(-${index * 40}px)`,
-                transition: "transform 0.6s ease-in-out",
-              }}
+
+          <div className="d-flex align-items-center">
+            <h1
+              style={{ marginRight: "0.5rem", fontSize: "2.5rem" }}
+              className="fw-normal"
+              data-aos="slide-right"
             >
-              {phrases.map((phrase, idx) => (
-                <div
-                  key={idx}
-                  className="slide-text text-dark fw-normal"
-                  style={{ fontSize: "3rem", height: "50px" }}
-                >
-                  {phrase}
-                </div>
-              ))}
+              Redefining
+            </h1>
+            <div
+              className="text-slider"
+              data-aos="slide-right"
+              style={{ height: "50px", overflow: "hidden" }}
+            >
+              <div
+                className="text-slide-track"
+                style={{
+                  transform: `translateY(-${index * 40}px)`,
+                  transition: "transform 0.6s ease-in-out",
+                }}
+              >
+                {phrases.map((phrase, idx) => (
+                  <div
+                    key={idx}
+                    className="slide-text text-dark fw-normal"
+                    style={{ fontSize: "2.5rem", height: "50px" }}
+                  >
+                    {phrase}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
 
-        <h1
-          style={{ fontSize: "4rem" }}
-          className="fw-normal"
-          data-aos="slide-right"
-        >
-          across the globe
-        </h1>
+          <h1 className="fw-normal" style={{ fontSize: "3.5rem" }} data-aos="slide-right">
+            across the globe
+          </h1>
 
-        <button className="mt-5 border-0 bg-transparent">
-          <a href="/" className="text-decoration-none text text-warning fs-5">
-            GET IN TOUCH <FaArrowRightLong />
-          </a>
-        </button>
-      </div>
-      <div>
-        <div
-          className="lines-in2-1 mb-4 dynamic-box p-3 rounded border-bottom"
-          data-aos="fade-down"
-        >
-          <h3 className="fw-normal">AI Transformation</h3>
-          <small className="fs-5">
-            We maximize the power and promise of AI to drive
-          </small>
-          <br />
-          <small className="fs-5">
-            transformative business outcomes through our
-          </small>
-          <br />
-          <small className="fs-5">
-            comprehensive AI consulting services and solutions
-          </small>
-          <br />
           <button className="mt-4 border-0 bg-transparent">
             <a href="/" className="text-decoration-none text text-warning fs-5">
-              Learn More <FaArrowRightLong />
+              GET IN TOUCH <FaArrowRightLong />
             </a>
           </button>
         </div>
-        <div
-          className="lines-i52-2 mt-4 dynamic-box p-3 rounded border-bottom"
-          data-aos="fade-down"
-        >
-          <h3 className="fw-normal">Data & Analytics</h3>
-          <small className="fs-5">
-            We enable enterprises to transform data into a business
-          </small>
-          <br />
-          <small className="fs-5">
-            advantage by tapping into the capabilities of ML, advanced
-          </small>
-          <br />
-          <small className="fs-5">
-            analytics, generative AI, and connected intelligence
-          </small>
-          <br />
-          <button className="mt-4 border-0 bg-transparent">
-            <a href="/" className="text-decoration-none text text-warning fs-5">
-              Learn More <FaArrowRightLong />
-            </a>
-          </button>
-        </div>
-        <div
-          className="lines-in2-1 mt-5 dynamic-box p-3 pt-5 rounded border-bottom"
-          data-aos="fade-up"
-        >
-          <h3 className="fw-normal">Digital</h3>
-          <small className="fs-5">
-            We offer core insights-driven digital transformation
-          </small>
-          <br />
-          <small className="fs-5">
-            capabilities, modernize key systems to accelerate systems,
-          </small>
-          <br />
-          <small className="fs-5">
-            and provide a design-led, unified and personalized experience.
-          </small>
-          <br />
-          <button className="mt-4 border-0 bg-transparent">
-            <a href="/" className="text-decoration-none text text-warning fs-5">
-              Learn More <FaArrowRightLong />
-            </a>
-          </button>
-        </div>
-        <div
-          className="lines-in2-2 mt-5 dynamic-box p-3 pt-5 rounded"
-          data-aos="fade-up"
-        >
-          <h3 className="fw-normal">Cloud</h3>
-          <small className="fs-5">
-            We help enterprises scale and adapt to evolving needs within a
-          </small>
-          <br />
-          <small className="fs-5">
-            secure hybrid or pure cloud environment by leveraging end-
-          </small>
-          <br />
-          <small className="fs-5">
-            to-end and outcome-based cloud solutions
-          </small>
-          <br />
-          <button className="mt-4 border-0 bg-transparent">
-            <a href="/" className="text-decoration-none text text-warning fs-5">
-              Learn More <FaArrowRightLong />
-            </a>
-          </button>
+        <div className="col-md-6">
+          <div
+            className="dynamic-box mb-4 p-3 rounded border-bottom"
+            data-aos="fade-down"
+          >
+            <h3 className="fw-normal">AI Transformation</h3>
+            <small className="fs-5 d-block">
+              We maximize the power and promise of AI to drive
+            </small>
+            <small className="fs-5 d-block">
+              transformative business outcomes through our
+            </small>
+            <small className="fs-5 d-block">
+              comprehensive AI consulting services and solutions
+            </small>
+            <button className="mt-4 border-0 bg-transparent">
+              <a href="/" className="text-decoration-none text text-warning fs-5">
+                Learn More <FaArrowRightLong />
+              </a>
+            </button>
+          </div>
+
+          <div
+            className="dynamic-box mb-4 p-3 rounded border-bottom"
+            data-aos="fade-down"
+          >
+            <h3 className="fw-normal">Data & Analytics</h3>
+            <small className="fs-5 d-block">
+              We enable enterprises to transform data into a business
+            </small>
+            <small className="fs-5 d-block">
+              advantage by tapping into the capabilities of ML, advanced
+            </small>
+            <small className="fs-5 d-block">
+              analytics, generative AI, and connected intelligence
+            </small>
+            <button className="mt-4 border-0 bg-transparent">
+              <a href="/" className="text-decoration-none text text-warning fs-5">
+                Learn More <FaArrowRightLong />
+              </a>
+            </button>
+          </div>
+
+          <div
+            className="dynamic-box mb-4 p-3 pt-4 rounded border-bottom"
+            data-aos="fade-up"
+          >
+            <h3 className="fw-normal">Digital</h3>
+            <small className="fs-5 d-block">
+              We offer core insights-driven digital transformation
+            </small>
+            <small className="fs-5 d-block">
+              capabilities, modernize key systems to accelerate systems,
+            </small>
+            <small className="fs-5 d-block">
+              and provide a design-led, unified and personalized experience.
+            </small>
+            <button className="mt-4 border-0 bg-transparent">
+              <a href="/" className="text-decoration-none text text-warning fs-5">
+                Learn More <FaArrowRightLong />
+              </a>
+            </button>
+          </div>
+
+          <div
+            className="dynamic-box mb-4 p-3 pt-4 rounded"
+            data-aos="fade-up"
+          >
+            <h3 className="fw-normal">Cloud</h3>
+            <small className="fs-5 d-block">
+              We help enterprises scale and adapt to evolving needs within a
+            </small>
+            <small className="fs-5 d-block">
+              secure hybrid or pure cloud environment by leveraging end-
+            </small>
+            <small className="fs-5 d-block">
+              to-end and outcome-based cloud solutions
+            </small>
+            <button className="mt-4 border-0 bg-transparent">
+              <a href="/" className="text-decoration-none text text-warning fs-5">
+                Learn More <FaArrowRightLong />
+              </a>
+            </button>
+          </div>
         </div>
       </div>
     </div>
