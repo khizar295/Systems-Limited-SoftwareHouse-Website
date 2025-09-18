@@ -136,3 +136,149 @@ html, body {
     padding-right: 3rem;
   }
 }
+
+.nav-item-with-mega {
+  position: static;
+}
+
+.mega-menu {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100vw;
+  height: 88vh;
+  background-color: #111;
+  padding: 2rem 4rem;
+  display: none;
+  z-index: 1050;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-top: 3px solid orange;
+  pointer-events: auto;
+}
+
+.nav-item-with-mega:hover .mega-menu {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.mega-menu-section {
+  flex: 1;
+}
+
+.mega-menu-section h6 {
+  color: orange;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.mega-menu-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mega-menu-section li {
+  margin-bottom: 0.5rem;
+}
+
+.mega-menu-section a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.mega-menu-section a:hover {
+  color: orange;
+}
+
+
+.nav-btn:hover a{
+    border-top: 1px solid orange;
+}
+
+@media (max-width: 950px) {
+  .mega-menu {
+    display: none !important;
+  }
+}
+
+
+.mega-menu {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100vw;
+  background-color: #111;
+  padding: 2rem 4rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  opacity: 0;
+  transform: translateY(-40px);
+  pointer-events: none;
+  z-index: 1050;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-top: 3px solid orange;
+  transition: opacity 1s ease, transform 0.3s ease;
+}
+
+
+.nav-item-with-mega:hover .mega-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.mega-menu-section h6 {
+  color: orange;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.mega-menu-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mega-menu-section li {
+  margin-bottom: 0.5rem;
+}
+
+.mega-menu-section a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.mega-menu-section a:hover {
+  color: orange;
+}
+
+.navbar-image{
+  transition: all 0.5s ease;
+}
+.navbar-image-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.navbar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.navbar-image:hover {
+  transform: scale(1.1);
+}
+
+
+
+@media (max-width: 950px) {
+  .mega-menu {
+    display: none !important;
+  }
+}

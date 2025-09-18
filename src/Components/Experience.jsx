@@ -62,7 +62,7 @@ export default function Experience() {
                 Years of continual <br /> excellence
               </small>
             </div>
-            <div style={{ marginLeft: "100px" }}>
+            <div className="style-7700" style={{ marginLeft: "100px" }}>
               <h1 style={{ fontSize: "4rem" }}>7700+</h1>
               <small>
                 Change makers driving <br /> resolution
